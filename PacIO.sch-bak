@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Pack Interface Breakout Board"
 Date "2019-11-18"
 Rev "0.2"
-Comp ""
+Comp "Lafayette College"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -54,14 +54,14 @@ Wire Wire Line
 Text Notes 10850 4800 2    50   ~ 0
 To Display
 $Comp
-L Connector_Generic:Conn_02x10_Odd_Even J1
+L Lafayette_Electric_Car_Internals:IDC-20pin J1
 U 1 1 5DD2D267
-P 5300 4350
-F 0 "J1" H 5350 4967 50  0000 C CNN
-F 1 "PacMan_Connector" H 5350 4876 50  0000 C CNN
-F 2 "" H 5300 4350 50  0001 C CNN
-F 3 "~" H 5300 4350 50  0001 C CNN
-	1    5300 4350
+P 5350 4450
+F 0 "J1" H 5100 5150 50  0000 C CNN
+F 1 "PacMan_Connector" H 5550 5150 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x10_P2.54mm_Vertical" H 5350 4450 50  0001 C CNN
+F 3 "~" H 5350 4450 50  0001 C CNN
+	1    5350 4450
 	1    0    0    -1  
 $EndComp
 Text Label 6100 4850 2    50   ~ 0
@@ -514,7 +514,7 @@ Wire Notes Line
 	500  6850 3050 6850
 Wire Notes Line
 	3050 6850 3050 7800
-Text Notes 5500 3550 0    50   ~ 0
+Text Notes 5200 3700 0    50   ~ 0
 To PacMan
 $Comp
 L Lafayette_Electric_Car_Internals:E-ink_Connector J2
@@ -522,7 +522,7 @@ U 1 1 5E04922A
 P 10250 4800
 F 0 "J2" H 10800 5350 50  0000 R CNN
 F 1 "E-ink Display" H 10600 5350 50  0000 R CNN
-F 2 "" H 10250 5350 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_S8B-PH-SM4-TB_1x08-1MP_P2.00mm_Horizontal" H 10250 5350 50  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 10250 5350 50  0001 C CNN
 F 4 "Digikey" H 10250 5350 50  0001 C CNN "Vendor"
 F 5 "455-1755-1-ND" H 10250 5350 50  0001 C CNN "Vendor Part"
@@ -537,7 +537,7 @@ U 1 1 5E04E744
 P 10350 3750
 F 0 "J3" H 10430 3742 50  0000 L CNN
 F 1 "High_Voltage_Indicator" H 9750 3900 50  0000 L CNN
-F 2 "" H 10350 3750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10350 3750 50  0001 C CNN
 F 3 "~" H 10350 3750 50  0001 C CNN
 	1    10350 3750
 	1    0    0    -1  
@@ -548,18 +548,18 @@ U 1 1 5E04DD09
 P 10400 3000
 F 0 "J4" H 10480 2992 50  0000 L CNN
 F 1 "Charge_Indicator" H 9900 3150 50  0000 L CNN
-F 2 "" H 10400 3000 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10400 3000 50  0001 C CNN
 F 3 "~" H 10400 3000 50  0001 C CNN
 	1    10400 3000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Lafayette_Electric_Car_Internals:PushButton BTN?
+L Lafayette_Electric_Car_Internals:PushButton BTN1
 U 1 1 5E0567FB
 P 1450 4600
-F 0 "BTN?" V 1700 4850 50  0000 R CNN
-F 1 "BTN_LEFT" H 1600 4500 50  0000 R CNN
-F 2 "" H 1700 4800 50  0001 C CNN
+F 0 "BTN1" V 1700 4850 50  0000 R CNN
+F 1 "PushButton" H 1600 4500 50  0000 R CNN
+F 2 "Lafayette_Electric_Car_Footprints:PushButton" H 1700 4800 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf" H 1700 4800 50  0001 C CNN
 F 4 "Digikey" H 1250 4950 50  0001 C CNN "Vendor"
 F 5 "1715-1676-1-ND" H 1400 4950 50  0001 C CNN "Vendor Part"
@@ -569,12 +569,12 @@ F 7 "1.14100.5030000" H 1400 4950 50  0001 C CNN "Manufacturer Part"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Lafayette_Electric_Car_Internals:PushButton BTN?
+L Lafayette_Electric_Car_Internals:PushButton BTN2
 U 1 1 5E0578CF
 P 1850 4600
-F 0 "BTN?" V 2100 4800 50  0000 R CNN
+F 0 "BTN2" V 2100 4800 50  0000 R CNN
 F 1 "BTN_RIGHT" H 2050 4500 50  0000 R CNN
-F 2 "" H 2100 4800 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:PushButton" H 2100 4800 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf" H 2100 4800 50  0001 C CNN
 F 4 "Digikey" H 1650 4950 50  0001 C CNN "Vendor"
 F 5 "1715-1676-1-ND" H 1800 4950 50  0001 C CNN "Vendor Part"
@@ -584,12 +584,12 @@ F 7 "1.14100.5030000" H 1800 4950 50  0001 C CNN "Manufacturer Part"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Lafayette_Electric_Car_Internals:PushButton BTN?
+L Lafayette_Electric_Car_Internals:PushButton BTN3
 U 1 1 5E057F5F
 P 2250 4600
-F 0 "BTN?" V 2500 4800 50  0000 R CNN
+F 0 "BTN3" V 2500 4800 50  0000 R CNN
 F 1 "BTN_UP" H 2400 4500 50  0000 R CNN
-F 2 "" H 2500 4800 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:PushButton" H 2500 4800 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf" H 2500 4800 50  0001 C CNN
 F 4 "Digikey" H 2050 4950 50  0001 C CNN "Vendor"
 F 5 "1715-1676-1-ND" H 2200 4950 50  0001 C CNN "Vendor Part"
@@ -599,12 +599,12 @@ F 7 "1.14100.5030000" H 2200 4950 50  0001 C CNN "Manufacturer Part"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Lafayette_Electric_Car_Internals:PushButton BTN?
+L Lafayette_Electric_Car_Internals:PushButton BTN4
 U 1 1 5E0586A8
 P 2650 4600
-F 0 "BTN?" V 2900 4800 50  0000 R CNN
+F 0 "BTN4" V 2900 4800 50  0000 R CNN
 F 1 "BTN_DOWN" H 2850 4500 50  0000 R CNN
-F 2 "" H 2900 4800 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:PushButton" H 2900 4800 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf" H 2900 4800 50  0001 C CNN
 F 4 "Digikey" H 2450 4950 50  0001 C CNN "Vendor"
 F 5 "1715-1676-1-ND" H 2600 4950 50  0001 C CNN "Vendor Part"
@@ -614,12 +614,12 @@ F 7 "1.14100.5030000" H 2600 4950 50  0001 C CNN "Manufacturer Part"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Lafayette_Electric_Car_Internals:PushButton BTN?
+L Lafayette_Electric_Car_Internals:PushButton BTN5
 U 1 1 5E058C74
 P 3050 4600
-F 0 "BTN?" V 3300 4850 50  0000 R CNN
+F 0 "BTN5" V 3300 4850 50  0000 R CNN
 F 1 "BTN_CENTER" H 3300 4500 50  0000 R CNN
-F 2 "" H 3300 4800 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:PushButton" H 3300 4800 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf" H 3300 4800 50  0001 C CNN
 F 4 "Digikey" H 2850 4950 50  0001 C CNN "Vendor"
 F 5 "1715-1676-1-ND" H 3000 4950 50  0001 C CNN "Vendor Part"

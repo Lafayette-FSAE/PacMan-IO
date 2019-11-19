@@ -1,4 +1,4 @@
-16352927312961435
+16354501675740677
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49637,6 +49637,13 @@ Lafayette_Electric_Car_Footprints
 2
 2
 Lafayette_Electric_Car_Footprints
+Amphenol_IDC-Header_2x10_P2.54mm_Vertical
+
+
+0
+20
+20
+Lafayette_Electric_Car_Footprints
 BluePill
 
 
@@ -49768,7 +49775,7 @@ PushButton
 
 0
 4
-4
+2
 Lafayette_Electric_Car_Footprints
 SlottedHole
 
