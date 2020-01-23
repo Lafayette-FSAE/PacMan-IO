@@ -1,4 +1,4 @@
-16354501675740677
+16386088377721683
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -49637,6 +49637,13 @@ Lafayette_Electric_Car_Footprints
 2
 2
 Lafayette_Electric_Car_Footprints
+AVX
+
+
+0
+2
+2
+Lafayette_Electric_Car_Footprints
 Amphenol_IDC-Header_2x10_P2.54mm_Vertical
 
 
@@ -49686,6 +49693,20 @@ DF22-2P-7.92
 2
 2
 Lafayette_Electric_Car_Footprints
+Diode_NTS260ESF
+
+
+0
+2
+2
+Lafayette_Electric_Car_Footprints
+Diode_PMEG3020DEP
+
+
+0
+2
+2
+Lafayette_Electric_Car_Footprints
 ECE_Logo
 
 
@@ -49699,6 +49720,13 @@ ECE_Logo_Jon
 0
 0
 0
+Lafayette_Electric_Car_Footprints
+ESP32DEVKIT
+
+
+0
+30
+30
 Lafayette_Electric_Car_Footprints
 ESP32TTGOT8
 
@@ -49714,6 +49742,13 @@ G5Q-1A4
 4
 4
 Lafayette_Electric_Car_Footprints
+MODULE_ESP32-DEVKITC-32D
+
+
+0
+38
+38
+Lafayette_Electric_Car_Footprints
 MOLEX_34830-0801_STOCK
 
 
@@ -49728,12 +49763,26 @@ MOLEX_RJ11
 7
 7
 Lafayette_Electric_Car_Footprints
+Molex-2-pin
+
+
+0
+2
+2
+Lafayette_Electric_Car_Footprints
 Molex_MX150_Header
 
 
 0
 8
 8
+Lafayette_Electric_Car_Footprints
+Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical
+
+
+0
+2
+2
 Lafayette_Electric_Car_Footprints
 Molex_Mini-Fit_Jr_5566-04A2_2x02_P4.20mm_Vertical
 
@@ -49748,6 +49797,34 @@ Molex_Mini-Fit_Jr_5566-06A2_2x03_P4.20mm_Vertical
 0
 6
 6
+Lafayette_Electric_Car_Footprints
+Molex_Mini-Fit_Jr_5566-08A2_2x04_P4.20mm_Vertical
+
+
+0
+8
+8
+Lafayette_Electric_Car_Footprints
+Molex_Mini-Fit_Jr_5566-12A2_2x06_P4.20mm_Vertical
+
+
+0
+12
+12
+Lafayette_Electric_Car_Footprints
+MountingHole_#4_Pad
+
+
+0
+1
+1
+Lafayette_Electric_Car_Footprints
+NanoFit
+
+
+0
+2
+2
 Lafayette_Electric_Car_Footprints
 NodeMCUESP8266
 
@@ -49769,6 +49846,13 @@ Paw
 0
 0
 0
+Lafayette_Electric_Car_Footprints
+Powerpole_PP45_FP_1x2
+
+
+0
+2
+2
 Lafayette_Electric_Car_Footprints
 PushButton
 
@@ -49798,7 +49882,28 @@ TEC2-4815
 7
 7
 Lafayette_Electric_Car_Footprints
+TEC3-2419
+
+
+0
+7
+7
+Lafayette_Electric_Car_Footprints
 TE_DT13-4P
+
+
+0
+4
+4
+Lafayette_Electric_Car_Footprints
+Transformer
+Footprint for 750313457 Transformer used in CellMan Balance Circuit
+
+0
+8
+8
+Lafayette_Electric_Car_Footprints
+VIFSD1-S24-S5-SIP
 
 
 0
@@ -49811,6 +49916,27 @@ VX7805-500
 0
 3
 3
+Lafayette_Electric_Car_Footprints
+domestic_squabble
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
+drunk pacman
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
+drunk pacman2
+
+
+0
+0
+0
 Lafayette_Electric_Car_Footprints
 fuse_holder_smd_littelfuse
 
@@ -49833,7 +49959,21 @@ highvoltagesmall
 0
 0
 Lafayette_Electric_Car_Footprints
+pacman_github_link
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
 paw_solder_mask
+
+
+0
+0
+0
+Lafayette_Electric_Car_Footprints
+paw_solder_mask_larger
 
 
 0
