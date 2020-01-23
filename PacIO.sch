@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:PacIO-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -75,13 +74,7 @@ LV_RTN
 Text Label 6100 4450 2    50   ~ 0
 LV_RTN
 Text Label 6100 4350 2    50   ~ 0
-DISP_RST
-Text Label 6100 4250 2    50   ~ 0
-LV_3V3
-Text Label 6100 4150 2    50   ~ 0
-LV_24V
-Text Label 6100 4050 2    50   ~ 0
-TSV_LIVE
+DISP_CLK
 Text Label 6100 3950 2    50   ~ 0
 CHRGE_LED
 Wire Wire Line
@@ -95,15 +88,15 @@ BTN_UP
 Text Label 4600 4350 0    50   ~ 0
 BTN_CENTER
 Text Label 4600 4450 0    50   ~ 0
-DISP_DIN
-Text Label 4600 4550 0    50   ~ 0
-DISP_CLK
-Text Label 4600 4650 0    50   ~ 0
-DISP_DC
-Text Label 4600 4750 0    50   ~ 0
 DISP_CS
-Text Label 4600 4850 0    50   ~ 0
+Text Label 4600 4550 0    50   ~ 0
 DISP_BUSY
+Text Label 4600 4650 0    50   ~ 0
+DISP_RST
+Text Label 4600 4750 0    50   ~ 0
+DISP_DC
+Text Label 4600 4850 0    50   ~ 0
+DISP_DIN
 Text Label 4600 4250 0    50   ~ 0
 BTN_DOWN
 Wire Wire Line
@@ -305,20 +298,14 @@ Text Label 3050 4250 1    50   ~ 0
 BTN_CENTER
 Text Label 9750 3100 0    50   ~ 0
 CHRGE_LED
-Text Label 9750 3750 0    50   ~ 0
-TSV_LIVE
 Wire Wire Line
 	10200 3100 9750 3100
-Wire Wire Line
-	10150 3850 9750 3850
 Text Notes 1750 3500 0    50   ~ 0
 Pull Up Resistors Live on PacMan
 Text Notes 6850 5400 0    50   ~ 0
 Pass display signals directly through to display
 Wire Wire Line
 	10200 3000 9750 3000
-Wire Wire Line
-	10150 3750 9750 3750
 Entry Wire Line
 	1450 3750 1550 3650
 Entry Wire Line
@@ -331,8 +318,6 @@ Entry Wire Line
 	3050 3750 3150 3650
 Wire Wire Line
 	5600 3950 6100 3950
-Wire Wire Line
-	6100 4050 5600 4050
 Connection ~ 3900 3650
 Wire Bus Line
 	3900 3650 4500 3650
@@ -387,10 +372,6 @@ F 3 "" H 7450 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 4150 6300 4050
-Wire Wire Line
-	5600 4150 6300 4150
-Wire Wire Line
 	6550 4250 6550 4050
 Wire Wire Line
 	5600 4250 6550 4250
@@ -403,17 +384,6 @@ F 1 "+3.3V" H 6565 4223 50  0000 C CNN
 F 2 "" H 6550 4050 50  0001 C CNN
 F 3 "" H 6550 4050 50  0001 C CNN
 	1    6550 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR07
-U 1 1 5DE78D63
-P 6300 4050
-F 0 "#PWR07" H 6300 3900 50  0001 C CNN
-F 1 "+24V" H 6315 4223 50  0000 C CNN
-F 2 "" H 6300 4050 50  0001 C CNN
-F 3 "" H 6300 4050 50  0001 C CNN
-	1    6300 4050
 	1    0    0    -1  
 $EndComp
 Text Notes 6000 5100 2    50   ~ 0
@@ -484,10 +454,6 @@ Text Label 9750 3000 0    50   ~ 0
 LV_24V
 Text Notes 9550 2700 0    50   ~ 0
 Charge Indicator LED is driven by\nan NMOS transistor on PacMan
-Text Notes 9550 3450 0    50   ~ 0
-TSV_LIVE LED is driven by 24V output\nof a DC to DC converter on PacMan
-Text Label 9750 3850 0    50   ~ 0
-LV_RTN
 $Comp
 L Lafayette_Electric_Car_Internals:LafECEDepLogo LOGO1
 U 1 1 5DE92104
@@ -530,17 +496,6 @@ F 6 "JST Sales America Inc." H 10250 5350 50  0001 C CNN "Manufacturer"
 F 7 "S8B-PH-SM4-TB(LF)(SN)" H 10250 5350 50  0001 C CNN "Manufacturer Part"
 	1    10250 4800
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 5E04E744
-P 10350 3750
-F 0 "J3" H 10430 3742 50  0000 L CNN
-F 1 "High_Voltage_Indicator" H 9750 3900 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10350 3750 50  0001 C CNN
-F 3 "~" H 10350 3750 50  0001 C CNN
-	1    10350 3750
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J4
@@ -638,10 +593,30 @@ Wire Wire Line
 	1850 3750 1850 4400
 Wire Wire Line
 	1450 3750 1450 4400
-Wire Bus Line
-	4500 4550 4500 5300
+Wire Wire Line
+	6100 4150 5600 4150
+Wire Wire Line
+	5600 4050 6300 4050
+Text Label 6100 4050 2    50   ~ 0
+LV_24V
+$Comp
+L power:+24V #PWR07
+U 1 1 5DE78D63
+P 6300 4050
+F 0 "#PWR07" H 6300 3900 50  0001 C CNN
+F 1 "+24V" H 6315 4223 50  0000 C CNN
+F 2 "" H 6300 4050 50  0001 C CNN
+F 3 "" H 6300 4050 50  0001 C CNN
+	1    6300 4050
+	1    0    0    -1  
+$EndComp
+Text Label 6100 4250 2    50   ~ 0
+LV_3V3
+NoConn ~ 6100 4150
 Wire Bus Line
 	1550 3650 3900 3650
+Wire Bus Line
+	4500 4550 4500 5300
 Wire Bus Line
 	4500 3650 4500 4250
 Wire Bus Line
