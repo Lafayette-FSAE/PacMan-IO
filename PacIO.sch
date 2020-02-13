@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PacIO-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -394,7 +395,7 @@ U 1 1 5DE82D16
 P 7900 1750
 F 0 "H1" H 7650 1800 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7100 1700 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 7900 1750 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:MountingHole_#4_Pad" H 7900 1750 50  0001 C CNN
 F 3 "~" H 7900 1750 50  0001 C CNN
 	1    7900 1750
 	1    0    0    -1  
@@ -405,7 +406,7 @@ U 1 1 5DE843BA
 P 7900 2250
 F 0 "H2" H 7650 2300 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7100 2200 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 7900 2250 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:MountingHole_#4_Pad" H 7900 2250 50  0001 C CNN
 F 3 "~" H 7900 2250 50  0001 C CNN
 	1    7900 2250
 	1    0    0    1   
@@ -416,7 +417,7 @@ U 1 1 5DE84626
 P 8200 2250
 F 0 "H4" H 8300 2299 50  0000 L CNN
 F 1 "MountingHole_Pad" H 8300 2208 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 8200 2250 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:MountingHole_#4_Pad" H 8200 2250 50  0001 C CNN
 F 3 "~" H 8200 2250 50  0001 C CNN
 	1    8200 2250
 	1    0    0    1   
@@ -427,7 +428,7 @@ U 1 1 5DE848D2
 P 8200 1750
 F 0 "H3" H 8300 1799 50  0000 L CNN
 F 1 "MountingHole_Pad" H 8300 1708 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 8200 1750 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:MountingHole_#4_Pad" H 8200 1750 50  0001 C CNN
 F 3 "~" H 8200 1750 50  0001 C CNN
 	1    8200 1750
 	1    0    0    -1  

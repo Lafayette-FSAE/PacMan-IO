@@ -298,20 +298,14 @@ Text Label 3050 4250 1    50   ~ 0
 BTN_CENTER
 Text Label 9750 3100 0    50   ~ 0
 CHRGE_LED
-Text Label 9750 3750 0    50   ~ 0
-TSV_LIVE
 Wire Wire Line
 	10200 3100 9750 3100
-Wire Wire Line
-	10150 3850 9750 3850
 Text Notes 1750 3500 0    50   ~ 0
 Pull Up Resistors Live on PacMan
 Text Notes 6850 5400 0    50   ~ 0
 Pass display signals directly through to display
 Wire Wire Line
 	10200 3000 9750 3000
-Wire Wire Line
-	10150 3750 9750 3750
 Entry Wire Line
 	1450 3750 1550 3650
 Entry Wire Line
@@ -400,7 +394,7 @@ U 1 1 5DE82D16
 P 7900 1750
 F 0 "H1" H 7650 1800 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7100 1700 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 7900 1750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 7900 1750 50  0001 C CNN
 F 3 "~" H 7900 1750 50  0001 C CNN
 	1    7900 1750
 	1    0    0    -1  
@@ -411,7 +405,7 @@ U 1 1 5DE843BA
 P 7900 2250
 F 0 "H2" H 7650 2300 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7100 2200 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 7900 2250 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 7900 2250 50  0001 C CNN
 F 3 "~" H 7900 2250 50  0001 C CNN
 	1    7900 2250
 	1    0    0    1   
@@ -422,7 +416,7 @@ U 1 1 5DE84626
 P 8200 2250
 F 0 "H4" H 8300 2299 50  0000 L CNN
 F 1 "MountingHole_Pad" H 8300 2208 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 8200 2250 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 8200 2250 50  0001 C CNN
 F 3 "~" H 8200 2250 50  0001 C CNN
 	1    8200 2250
 	1    0    0    1   
@@ -433,7 +427,7 @@ U 1 1 5DE848D2
 P 8200 1750
 F 0 "H3" H 8300 1799 50  0000 L CNN
 F 1 "MountingHole_Pad" H 8300 1708 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 8200 1750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 8200 1750 50  0001 C CNN
 F 3 "~" H 8200 1750 50  0001 C CNN
 	1    8200 1750
 	1    0    0    -1  
@@ -460,10 +454,6 @@ Text Label 9750 3000 0    50   ~ 0
 LV_24V
 Text Notes 9550 2700 0    50   ~ 0
 Charge Indicator LED is driven by\nan NMOS transistor on PacMan
-Text Notes 9550 3450 0    50   ~ 0
-TSV_LIVE LED is driven by 24V output\nof a DC to DC converter on PacMan
-Text Label 9750 3850 0    50   ~ 0
-LV_RTN
 $Comp
 L Lafayette_Electric_Car_Internals:LafECEDepLogo LOGO1
 U 1 1 5DE92104
@@ -506,17 +496,6 @@ F 6 "JST Sales America Inc." H 10250 5350 50  0001 C CNN "Manufacturer"
 F 7 "S8B-PH-SM4-TB(LF)(SN)" H 10250 5350 50  0001 C CNN "Manufacturer Part"
 	1    10250 4800
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 5E04E744
-P 10350 3750
-F 0 "J3" H 10430 3742 50  0000 L CNN
-F 1 "High_Voltage_Indicator" H 9750 3900 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10350 3750 50  0001 C CNN
-F 3 "~" H 10350 3750 50  0001 C CNN
-	1    10350 3750
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J4
@@ -616,8 +595,6 @@ Wire Wire Line
 	1450 3750 1450 4400
 Wire Wire Line
 	6100 4150 5600 4150
-Text Label 6100 4150 2    50   ~ 0
-.
 Wire Wire Line
 	5600 4050 6300 4050
 Text Label 6100 4050 2    50   ~ 0
