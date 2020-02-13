@@ -484,27 +484,12 @@ Wire Notes Line
 Text Notes 5200 3700 0    50   ~ 0
 To PacMan
 $Comp
-L Lafayette_Electric_Car_Internals:E-ink_Connector J2
-U 1 1 5E04922A
-P 10250 4800
-F 0 "J2" H 10800 5350 50  0000 R CNN
-F 1 "E-ink Display" H 10600 5350 50  0000 R CNN
-F 2 "Connector_JST:JST_PH_S8B-PH-SM4-TB_1x08-1MP_P2.00mm_Horizontal" H 10250 5350 50  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 10250 5350 50  0001 C CNN
-F 4 "Digikey" H 10250 5350 50  0001 C CNN "Vendor"
-F 5 "455-1755-1-ND" H 10250 5350 50  0001 C CNN "Vendor Part"
-F 6 "JST Sales America Inc." H 10250 5350 50  0001 C CNN "Manufacturer"
-F 7 "S8B-PH-SM4-TB(LF)(SN)" H 10250 5350 50  0001 C CNN "Manufacturer Part"
-	1    10250 4800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J4
+L Connector:Screw_Terminal_01x02 J3
 U 1 1 5E04DD09
 P 10400 3000
-F 0 "J4" H 10480 2992 50  0000 L CNN
+F 0 "J3" H 10480 2992 50  0000 L CNN
 F 1 "Charge_Indicator" H 9900 3150 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10400 3000 50  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:ScrewTerminal_0.2in" H 10400 3000 50  0001 C CNN
 F 3 "~" H 10400 3000 50  0001 C CNN
 	1    10400 3000
 	1    0    0    -1  
@@ -614,6 +599,21 @@ $EndComp
 Text Label 6100 4250 2    50   ~ 0
 LV_3V3
 NoConn ~ 6100 4150
+$Comp
+L Lafayette_Electric_Car_Internals:E-ink_Connector J2
+U 1 1 5E04922A
+P 10250 4800
+F 0 "J2" H 10800 5350 50  0000 R CNN
+F 1 "E-ink Display" H 10600 5350 50  0000 R CNN
+F 2 "Connector_JST:JST_PH_S8B-PH-SM4-TB_1x08-1MP_P2.00mm_Horizontal" H 10250 5350 50  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" H 10250 5350 50  0001 C CNN
+F 4 "Digikey" H 10250 5350 50  0001 C CNN "Vendor"
+F 5 "455-1755-1-ND" H 10250 5350 50  0001 C CNN "Vendor Part"
+F 6 "JST Sales America Inc." H 10250 5350 50  0001 C CNN "Manufacturer"
+F 7 "S8B-PH-SM4-TB(LF)(SN)" H 10250 5350 50  0001 C CNN "Manufacturer Part"
+	1    10250 4800
+	-1   0    0    -1  
+$EndComp
 Wire Bus Line
 	1550 3650 3900 3650
 Wire Bus Line
