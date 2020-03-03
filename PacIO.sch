@@ -459,7 +459,7 @@ U 1 1 5E04DD09
 P 10400 3000
 F 0 "J3" H 10480 2992 50  0000 L CNN
 F 1 "Charge LED" H 9900 3150 50  0000 L CNN
-F 2 "Lafayette_Electric_Car_Footprints:ScrewTerminal_0.2in" H 10400 3000 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10400 3000 50  0001 C CNN
 F 3 "~" H 10400 3000 50  0001 C CNN
 	1    10400 3000
 	1    0    0    -1  
@@ -584,6 +584,8 @@ F 7 "1.14100.5030000" H 1400 4950 50  0001 C CNN "Manufacturer Part"
 	1    1450 4600
 	0    -1   -1   0   
 $EndComp
+Text Notes 7600 2000 0    50   ~ 0
+DON'T Ground to Chassis
 Wire Bus Line
 	1550 3650 3900 3650
 Wire Bus Line
@@ -592,6 +594,4 @@ Wire Bus Line
 	4500 3650 4500 4250
 Wire Bus Line
 	9500 4550 9500 5300
-Text Notes 7600 2000 0    50   ~ 0
-DON'T Ground to Chassis
 $EndSCHEMATC
